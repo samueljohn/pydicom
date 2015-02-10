@@ -5,7 +5,7 @@
 #    See the file license.txt included with this distribution, also
 #    available at https://github.com/darcymason/pydicom
 
-from __future__ import print_function
+
 from io import BytesIO
 
 

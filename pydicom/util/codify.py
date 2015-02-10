@@ -275,9 +275,9 @@ if __name__ == "__main__":
     try:
         import argparse
     except ImportError:
-        print "The argparse module is required to run this script"
-        print "argparse is standard in python >= 2.7,"
-        print "   or can be installed with 'pip install argparse'"
+        print("The argparse module is required to run this script")
+        print("argparse is standard in python >= 2.7,")
+        print("   or can be installed with 'pip install argparse'")
         sys.exit(-1)
 
     parser = argparse.ArgumentParser(
@@ -293,7 +293,7 @@ if __name__ == "__main__":
                         help="Filename to write python code to. "
                         "If not specified, code is written to stdout",
                         default=sys.stdout)
-    parser.add_argument('-e', '--exclude-size', type=long,
+    parser.add_argument('-e', '--exclude-size', type=int,
                         default=default_exclude_size,
                         help='Exclude binary data larger than specified (bytes)'
                         '. Default is %d bytes' % default_exclude_size)
